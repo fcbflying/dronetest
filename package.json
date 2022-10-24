@@ -1,0 +1,24 @@
+{
+  "name": "io.drone",
+  "version": "1.0.0",
+  "description": "drone test version",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fcbflying/dronetest.git"
+  },
+  "keywords": [
+    "drone",
+    "ci",
+    "test"
+  ],
+  "author": "CBF",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fcbflying/dronetest/issues"
+  },
+  "homepage": "https://github.com/fcbflying/dronetest#readme"
+}
