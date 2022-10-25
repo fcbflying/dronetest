@@ -7,6 +7,7 @@ steps:
     commands:
       - npm install
       - npm test
-trigger:
-  event:
-    - push
+      - http-server
+  when:
+    event:
+      - push
