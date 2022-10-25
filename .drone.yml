@@ -2,9 +2,11 @@ kind: pipeline
 name: default
 
 steps:
-  - name: test
-    image: node
+  - name: droneci
+    image: drone-ci
     commands:
       - npm install
       - npm test
-      - npm run serve
+trigger:
+  event:
+    - push
