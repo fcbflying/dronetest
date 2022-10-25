@@ -2,11 +2,11 @@ kind: pipeline
 name: default
 
 steps:
-  - name: droneciT
+  - name: droneci
     image: drone-ci
     commands:
-      - npm install
-      - npm test
+    - npm install
+    - npm test
   when:
     branch:
       - main
