@@ -24,4 +24,4 @@ pipeline:
     script:
       - docker login -u uwantsoft -p uwantsoft123 docker.goeasy.io
       - docker pull docker.goeasy.io/droneci:1.2
-      - docker run -d -p 80:80 --name droneci1.2 docker.goeasy.io/droneci:1.2
+      - docker run -d -p 8080:8080 --name droneci1.2 docker.goeasy.io/droneci:1.2
