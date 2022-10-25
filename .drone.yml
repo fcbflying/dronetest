@@ -7,7 +7,6 @@ steps:
     commands:
       - npm install
       - npm test
-      - npm run serve
   when:
     branch:
       - main
