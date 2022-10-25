@@ -9,5 +9,5 @@ steps:
       - npm test
       - http-server
   when:
-    event:
-      - push
+    branch:
+      - master
