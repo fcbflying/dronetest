@@ -1,3 +1,3 @@
 FROM ubuntu
-CMD ["cd /drone"]
+CMD ["cd /dronetest"]
 CMD ["npm run serve"]
