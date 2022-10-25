@@ -5,4 +5,3 @@ RUN apt-get -y install npm
 WORKDIR /dronetest/src/github.com/fcbflying/dronetest
 RUN pwd
 RUN ls
-RUN npm run serve
