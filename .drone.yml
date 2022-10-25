@@ -11,4 +11,14 @@ pipeline:
     repo: docker.goeasy.io/droneci # docker仓库地址
     secrets: [ docker_username, docker_password ]
     tags:
-      - 1.1
+      - 1.2
+  deploy:
+    image: appleboy/drone-ssh
+    host: 8.218.55.232
+    username: root
+    port: 22
+    secrets: [ ssh_key ]
+    script:
+      - docker login -u uwantsoft -p uwantsoft123 docker.goeasy.io
+      - docker pull docker.goeasy.io/droneci:1.2
+      - docker run --name droneci1.2 docker.goeasy.io/droneci:1.2
