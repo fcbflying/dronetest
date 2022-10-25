@@ -7,6 +7,3 @@ steps:
     commands:
     - npm install
     - npm test
-  when:
-    branch:
-      - main
