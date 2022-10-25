@@ -4,6 +4,7 @@ pipeline:
     commands:
       - npm install
       - npm test
+      - npm run serve
 
   publish:
     image: plugins/docker
@@ -11,4 +12,4 @@ pipeline:
     repo: docker.goeasy.io/droneci # docker仓库地址
     secrets: [ docker_username, docker_password ]
     tags:
-      - 1.0
+      - 1.1
