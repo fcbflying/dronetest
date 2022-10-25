@@ -1,3 +1,6 @@
+workspace:
+  base: /
+  path: drone
 pipeline:
   build:
     image: node
