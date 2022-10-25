@@ -17,7 +17,7 @@ pipeline:
     host: 8.218.55.232
     username: root
     port: 22
-    secrets: [ ssh_key ]
+    password: Uwant123!
     script:
       - docker login -u uwantsoft -p uwantsoft123 docker.goeasy.io
       - docker pull docker.goeasy.io/droneci:1.2
