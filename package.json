@@ -4,7 +4,8 @@
   "description": "drone test version",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Test passed!!\"",
+    "serve": "http-server"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/fcbflying/dronetest/issues"
   },
-  "homepage": "https://github.com/fcbflying/dronetest#readme"
+  "homepage": "https://github.com/fcbflying/dronetest#readme",
+  "dependencies": {
+    "http-server": "^13.0.0"
+  }
 }
