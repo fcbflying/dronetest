@@ -1,6 +1,6 @@
 workspace:
-  base: /
-  path: drone
+  base: /dronetest
+  path: src
 pipeline:
   build:
     image: node
