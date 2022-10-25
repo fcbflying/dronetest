@@ -3,7 +3,7 @@ name: default
 
 steps:
   - name: droneci
-    image: drone-ci
+    image: droneci
     commands:
     - npm install
     - npm test
