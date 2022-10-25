@@ -1,7 +1,7 @@
-FROM ubuntu
-RUN apt-get update
-RUN apt-get -y install nodejs
-RUN apt-get -y install npm
+FROM node
 WORKDIR /dronetest/src/github.com/fcbflying/dronetest
 RUN pwd
 RUN ls
+COPY run.sh run.sh
+RUN chmod +x /run.sh
+CMD ["/run.sh"]
