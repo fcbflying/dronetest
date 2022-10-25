@@ -1,4 +1,4 @@
 #!/bin/bash
-cd /dronetest/src/github.com/fcbflying/dronetest
+cd /src/github.com/fcbflying/dronetest
 ls -ll
 npm run serve
