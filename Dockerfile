@@ -1,1 +1,1 @@
-FROM docker.uwantsoft.com/uwant-ubuntu
+FROM ubuntu
