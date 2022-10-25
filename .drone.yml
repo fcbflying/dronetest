@@ -1,10 +1,14 @@
-kind: pipeline
-name: default
-
-steps:
-  - name: droneci
+pipeline:
+  build:
     image: node
     commands:
-    - npm install
-    - npm test
-    - npm run serve
+      - npm install
+      - npm test
+
+  publish:
+    image: plugins/docker
+    registry: https://docker.goeasy.io # 仓库
+    repo: droneci # docker仓库地址
+    secrets: [ docker_username, docker_password ]
+    tags:
+      - 1.0
