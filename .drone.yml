@@ -7,8 +7,8 @@ pipeline:
 
   publish:
     image: plugins/docker
-    registry: https://docker.goeasy.io # 仓库
-    repo: droneci # docker仓库地址
+    registry: docker.goeasy.io # 仓库
+    repo: docker.goeasy.io/droneci # docker仓库地址
     secrets: [ docker_username, docker_password ]
     tags:
       - 1.0
